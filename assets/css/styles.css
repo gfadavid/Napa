@@ -80,6 +80,10 @@ body {
     font-weight: var(--regular);
 }
 
+.dashboard__menu__link svg {
+    margin-right: 15px;
+}
+
 .dashboard__menu__link:hover {
     color: var(--color--primary);
     transition: all .25s;
