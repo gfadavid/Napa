@@ -150,6 +150,7 @@ body {
 .title--2 {
     font-size: var(--title-fz--2);
     font-weight: var(--light);
+    color: var(--white);
 }
 
 .title--3 {
@@ -197,8 +198,9 @@ body {
 .card__description {
     background-color: peru;
     font-weight: var(--extra-light);
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 2;
 }
 
 .card__svg {
