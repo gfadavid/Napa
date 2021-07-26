@@ -1,6 +1,13 @@
 :root {
-    --width-menu       : 250px;
-    --height-header    : 50px;
+    --width-menu        : 250px;
+    --height-header     : 50px;
+    /* PALETA DE COLORES */
+    --color--primary    : #FF0066;
+    /* ESCALA DE GRISES */
+    --gray--1           : #F5F5F5;
+    --gray--2           : #E5E5E5;
+    /* FUENTES */
+    --font--1           : #3E4356;
 }
 
 .dashboard {
