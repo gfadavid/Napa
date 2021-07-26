@@ -38,7 +38,7 @@ body {
 }
 
 .dashboard {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     min-height: 100vh;
     display: flex;
 }
@@ -122,6 +122,8 @@ body {
 }
 
 .dashboard__content__section {
+    background-color: var(--gray--2);
+    height: calc(100vh - (var(--height-header) + 1px));
     padding-right: var(--pl-menu);
     padding-left: var(--pl-menu);
 }
