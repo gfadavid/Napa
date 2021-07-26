@@ -135,9 +135,9 @@ body {
     padding-top: var(--pt-content);
 }
 
-.dashboard__content__section__title {
+/* .dashboard__content__section__title {
     background-color: violet;
-}
+} */
 
 [class*="title--"] {
     color: var(--font--1);
@@ -175,7 +175,7 @@ body {
 }
 
 .dashboard__content__section__cards {
-    background-color: mediumvioletred;
+    /* background-color: mediumvioletred; */
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -189,40 +189,40 @@ body {
 }
 
 .card__image {
-    background-color: slategray;
+    /* background-color: slategray; */
     height: 80px;
 }
 
-.card__statistics {
+/* .card__statistics {
     background-color: springgreen;
-}
+} */
 
 .card__description {
-    background-color: peru;
+    /* background-color: peru; */
     font-weight: var(--extra-light);
     margin-top: 5px;
     margin-bottom: 5px;
     line-height: 2;
 }
 
-.card__svg {
+/* .card__svg {
     background-color: plum;
 }
 
 .dashboard__content__section__reports {
     background-color: chocolate;
-}
+} */
 
 .dashboard__content__section__reports .card {
     background-color: var(--white);
     color: var(--black);
 }
 
-.card__title {
+/* .card__title {
     background-color: tan;
-}
+} */
 
 .card__content {
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     margin-top: 20px;
 }
