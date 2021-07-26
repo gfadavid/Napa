@@ -144,6 +144,11 @@ body {
     font-size: var(--title-fz--1);
 }
 
+.title--2 {
+    font-size: var(--title-fz--2);
+    font-weight: var(--light);
+}
+
 [class*="btn"] {
     padding: 0;
     width: 160px;
@@ -177,12 +182,15 @@ body {
 
 .card__statistics {
     background-color: springgreen;
-    font-size: var(--title-fz--2);
-    font-weight: var(--light);
 }
 
 .card__description {
+    background-color: peru;
     font-weight: var(--extra-light);
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.card__svg {
+    background-color: plum;
 }
