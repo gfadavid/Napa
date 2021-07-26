@@ -27,8 +27,8 @@
     background-color: var(--gray--1);
     height: var(--height-header);
     padding-left: var(--pl-menu);
-    border-right: 1px solid var(--font--2);
-    border-bottom: 1px solid var(--font--2);
+    border-right: 1px solid var(--gray--2);
+    border-bottom: 1px solid var(--gray--2);
 }
 
 .dashboard__menu__logo__image {
@@ -41,7 +41,7 @@
 }
 
 .dashboard__header {
-    background-color: mediumaquamarine;
+    background-color: var(--gray--1);
     height: var(--height-header);
     padding-left: var(--pl-menu);
 }
