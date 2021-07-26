@@ -1,15 +1,30 @@
 :root {
+    --pt-content        : 25px;
+
     --width-menu        : 250px;
-    --pl-menu           : 20px;
+    --pl-menu           : 35px;
     --height-header     : 70px;
     --width-icons       : 100px;
     /* PALETA DE COLORES */
     --color--primary    : #FF0066;
+    --white             : #ffffff;
     /* ESCALA DE GRISES */
     --gray--1           : #F5F5F5;
     --gray--2           : #E5E5E5;
     /* FUENTES */
     --font--1           : #3E4356;
+
+    --family            : "Lexend", sans-serif;
+    --extra-light       : 100;
+    --light             : 300;
+    --regular           : 400;
+    --semi-bold         : 500;
+    --bold              : 600;
+    --size              : 14px;
+}
+
+body {
+    font: var(--semi-bold) var(--size)  var(--family);
 }
 
 .dashboard {
@@ -24,6 +39,8 @@
 }
 
 .dashboard__menu__logo {
+    margin-bottom: 0;
+
     background-color: var(--gray--1);
     height: var(--height-header);
     padding-left: var(--pl-menu);
@@ -33,6 +50,31 @@
 
 .dashboard__menu__logo__image {
     width: 60px;
+}
+
+.dashboard__menu__content {
+    background-color: var(--white);
+    list-style: none;
+    padding-left: 0;
+}
+
+.dashboard__menu__item {
+}
+
+.dashboard__menu__link {
+    color: var(--font--1);
+    text-decoration: none;
+    line-height: 3;
+    display: block;
+    padding-left: var(--pl-menu);
+    font-weight: var(--regular);
+}
+
+.dashboard__menu__link:hover {
+    color: var(--color--primary);
+    transition: all .25s;
+    background-color: var(--gray--1);
+    padding-left: 50px;
 }
 
 .dashboard__content {
@@ -65,9 +107,16 @@
     background-color: transparent;
 
     text-transform: capitalize;
+    font-weight: var(--semi-bold);
 }
 
-.dashboard__content__section  {
-    background-color: orangered;
+.dashboard__content__section {
+    padding-right: var(--pl-menu);
+}
+
+.dashboard__content__section,
+.dashboard__menu__content  {
+    /* background-color: orangered; */
     height: calc(100vh - var(--height-header));
+    padding-top: var(--pt-content);
 }
