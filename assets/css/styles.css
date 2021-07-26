@@ -4,7 +4,7 @@
     --width-menu        : 250px;
     --pl-menu           : 35px;
     --height-header     : 70px;
-    --width-icons       : 100px;
+    --width-icons       : 65px;
     /* PALETA DE COLORES */
     --color--primary    : #FF0066;
     --white             : #ffffff;
@@ -12,6 +12,7 @@
     /* ESCALA DE GRISES */
     --gray--1           : #F5F5F5;
     --gray--2           : #E5E5E5;
+    --gray--3           : #AAB6D0;
     /* FUENTES */
     --font--1           : #3E4356;
 
@@ -104,12 +105,22 @@ body {
 }
 
 .notification {
-    background-color: slategrey;
+    /* background-color: slategrey; */
     width: var(--width-icons);
 }
 
-.notification__item {
+/* .notification__item {
     background-color: thistle;
+} */
+
+.notification__item > svg {
+    fill: var(--gray--3);
+    width: 21px;
+    height: 21px;
+}
+
+.notification__item > svg:hover {
+    cursor: pointer;
 }
 
 .user {
@@ -172,6 +183,7 @@ body {
     text-transform: uppercase;
     font-size: 12px;
     background-color: var(--color--primary);
+    border: none;
 }
 
 [class*="btn"]:hover {
