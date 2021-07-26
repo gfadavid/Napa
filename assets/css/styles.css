@@ -160,14 +160,15 @@ body {
 
 .dashboard__content__section {
     background-color: var(--gray--2);
-    height: calc(100vh - (var(--height-header) + 1px));
+    height: calc(100% - (var(--height-header) + 1px));
 }
 
 .dashboard__content__section,
 .dashboard__menu__content  {
     /* background-color: orangered; */
-    /* height: calc(100vh - var(--height-header) + 1px); */
+    /* height: calc(100% - var(--height-header) + 1px); */
     padding-top: var(--pt-content);
+    padding-bottom: var(--pt-content);
 }
 
 /* .dashboard__content__section__title {
