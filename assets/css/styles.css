@@ -4,7 +4,7 @@
     --width-menu        : 250px;
     --pl-menu           : 35px;
     --height-header     : 70px;
-    --width-icons       : 65px;
+    --width-icons       : 90px;
     /* PALETA DE COLORES */
     --color--primary    : #FF0066;
     --white             : #ffffff;
@@ -41,7 +41,6 @@ body {
 .dashboard {
     /* background-color: lightblue; */
     min-height: 100vh;
-    display: flex;
 }
 
 .dashboard__menu {
@@ -49,14 +48,36 @@ body {
     flex: 0 0 var(--width-menu);
 }
 
+.dashboard__header,
+.dashboard__menu__logo,
+.dashboard__content__section {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
 .dashboard__menu__logo {
     margin-bottom: 0;
 
     background-color: var(--gray--1);
     height: var(--height-header);
-    padding-left: var(--pl-menu);
     border-right: 1px solid var(--gray--2);
     border-bottom: 1px solid var(--gray--2);
+}
+
+.icon__menu > svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--gray--3);
+}
+
+.close__menu {
+    border: none;
+    background-color: transparent;
+}
+
+.close__menu > svg {
+    width: 25px;
+    height: 25px;
 }
 
 .dashboard__menu__logo__image {
@@ -94,14 +115,13 @@ body {
 }
 
 .dashboard__content {
-    background-color: lawngreen;
-    flex: 1 0 auto;
+    /* background-color: lawngreen; */
+    flex: 1 1 auto;
 }
 
 .dashboard__header {
     background-color: var(--gray--1);
     height: var(--height-header);
-    padding-left: var(--pl-menu);
     border-bottom: 1px solid var(--gray--2);
     box-shadow: 10px 10px #000000;
 }
@@ -127,7 +147,7 @@ body {
 
 .user {
     /* background-color: lightgreen; */
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 
 .user__toggle {
@@ -141,8 +161,6 @@ body {
 .dashboard__content__section {
     background-color: var(--gray--2);
     height: calc(100vh - (var(--height-header) + 1px));
-    padding-right: var(--pl-menu);
-    padding-left: var(--pl-menu);
 }
 
 .dashboard__content__section,
@@ -255,4 +273,30 @@ body {
 .card__content {
     /* background-color: rebeccapurple; */
     margin-top: 20px;
+}
+
+@media screen and (min-width: 992px) {
+
+    .dashboard__menu__logo {
+        padding-right: var(--pl-menu);
+        padding-left: var(--pl-menu);
+    }
+
+    .dashboard__header {
+        padding-left: var(--pl-menu);
+    }
+
+    .dashboard__content__section {
+        padding-right: var(--pl-menu);
+        padding-left: var(--pl-menu);
+    }
+    
+    .notification {
+        width: 65px;
+    }
+
+    .user {
+        margin-left: 100px;
+    }
+
 }

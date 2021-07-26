@@ -16,12 +16,17 @@
 </head>
 <body>
 
-    <main class="dashboard">
+    <main class="dashboard d-md-flex">
 
-        <aside class="dashboard__menu">
+        <aside class="dashboard__menu offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExample">
             
-            <figure class="d-flex align-items-center dashboard__menu__logo ">
+            <figure class="d-flex align-items-center justify-content-between dashboard__menu__logo ">
                 <img class="dashboard__menu__logo__image" src="assets/img/logo.png" alt="Logo de 'Napa'">
+                <button type="button" class="close__menu" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M1.293 1.293a1 1 0 0 1 1.414 0L8 6.586l5.293-5.293a1 1 0 1 1 1.414 1.414L9.414 8l5.293 5.293a1 1 0 0 1-1.414 1.414L8 9.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L6.586 8 1.293 2.707a1 1 0 0 1 0-1.414z"/>
+                    </svg>
+                </button>
             </figure>
 
             <ul class="dashboard__menu__content">
@@ -97,9 +102,15 @@
         
         <article class="dashboard__content">
 
-            <header class="d-flex align-items-center dashboard__header">
+            <header class="d-flex align-items-center justify-content-between justify-content-md-start dashboard__header">
+
                 
                 <article class="d-flex justify-content-between notification">
+                    <a class="d-md-none icon__menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </a>
                     <section class="notification__item">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                             <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
