@@ -19,13 +19,33 @@
     <main class="dashboard">
 
         <aside class="dashboard__menu">
-            Menú
+            
+            <figure class="d-flex align-items-center dashboard__menu__logo ">
+                <img class="dashboard__menu__logo__image" src="assets/img/logo.png" alt="Logo de 'Napa'">
+            </figure>
+
         </aside>
         
         <article class="dashboard__content">
 
-            <header class="dashboard__header">
-                Cabecera
+            <header class="d-flex align-items-center dashboard__header">
+                
+                <article class="d-flex justify-content-between notification">
+                    <section class="notification__item">Ícono</section>
+                    <section class="notification__item">Ícono</section>
+                </article>
+
+                <article class="dropdown user ">
+                    <button class="dropdown-toggle user__toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Andrea tarazona
+                    </button>
+                    <ul class="dropdown-menu user__menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item user__menu__item" href="#">Opción #1</a></li>
+                      <li><a class="dropdown-item user__menu__item" href="#">Opción #2</a></li>
+                      <li><a class="dropdown-item user__menu__item" href="#">Opción #3</a></li>
+                    </ul>
+                </article>
+
             </header> 
 
             <section class="dashboard__content__section">
@@ -38,5 +58,6 @@
 
     </main>
 
+    <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>

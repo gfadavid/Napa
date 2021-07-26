@@ -1,6 +1,8 @@
 :root {
     --width-menu        : 250px;
-    --height-header     : 50px;
+    --pl-menu           : 20px;
+    --height-header     : 70px;
+    --width-icons       : 100px;
     /* PALETA DE COLORES */
     --color--primary    : #FF0066;
     /* ESCALA DE GRISES */
@@ -21,6 +23,18 @@
     flex: 0 0 var(--width-menu);
 }
 
+.dashboard__menu__logo {
+    background-color: var(--gray--1);
+    height: var(--height-header);
+    padding-left: var(--pl-menu);
+    border-right: 1px solid var(--font--2);
+    border-bottom: 1px solid var(--font--2);
+}
+
+.dashboard__menu__logo__image {
+    width: 60px;
+}
+
 .dashboard__content {
     background-color: lawngreen;
     flex: 1 0 auto;
@@ -29,6 +43,28 @@
 .dashboard__header {
     background-color: mediumaquamarine;
     height: var(--height-header);
+    padding-left: var(--pl-menu);
+}
+
+.notification {
+    background-color: slategrey;
+    width: var(--width-icons);
+}
+
+.notification__item {
+    background-color: thistle;
+}
+
+.user {
+    /* background-color: lightgreen; */
+    margin-left: 100px;
+}
+
+.user__toggle {
+    border: none;
+    background-color: transparent;
+
+    text-transform: capitalize;
 }
 
 .dashboard__content__section  {
