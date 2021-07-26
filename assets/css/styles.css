@@ -146,7 +146,7 @@ body {
 
 .title--2 {
     font-size: var(--title-fz--2);
-    font-weight: var(--light);
+    font-weight: var(--light);gg
 }
 
 [class*="btn"] {
