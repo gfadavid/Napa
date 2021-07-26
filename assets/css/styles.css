@@ -102,6 +102,8 @@ body {
     background-color: var(--gray--1);
     height: var(--height-header);
     padding-left: var(--pl-menu);
+    border-bottom: 1px solid var(--gray--2);
+    box-shadow: 10px 10px #000000;
 }
 
 .notification {
@@ -192,8 +194,8 @@ body {
 
 .dashboard__content__section__cards {
     /* background-color: mediumvioletred; */
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 23px;
+    padding-bottom: 23px;
 }
 
 .card {
