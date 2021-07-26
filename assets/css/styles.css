@@ -1,0 +1,30 @@
+:root {
+    --width-menu       : 250px;
+    --height-header    : 50px;
+}
+
+.dashboard {
+    background-color: lightblue;
+    min-height: 100vh;
+    display: flex;
+}
+
+.dashboard__menu {
+    background-color: tomato;
+    flex: 0 0 var(--width-menu);
+}
+
+.dashboard__content {
+    background-color: lawngreen;
+    flex: 1 0 auto;
+}
+
+.dashboard__header {
+    background-color: mediumaquamarine;
+    height: var(--height-header);
+}
+
+.dashboard__content__section  {
+    background-color: orangered;
+    height: calc(100vh - var(--height-header));
+}
