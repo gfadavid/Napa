@@ -300,4 +300,14 @@ body {
         margin-left: 100px;
     }
 
+    .offcanvas-start {
+        width: var(--width-menu);
+    }
+    
+    .offcanvas {
+        transform: translateX(0);
+        visibility: visible;
+        position: static;
+    }
+
 }
